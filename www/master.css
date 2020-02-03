@@ -1,0 +1,147 @@
+body {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+/*  TOP PANEL */
+.top-panel{
+    margin: 20px;
+    background-color: #28a745;  
+    /* border: 1px solid #000207;   */
+    /* background-image: linear-gradient(to right, white, #28a745);*/
+}
+
+.top-panel h1 {
+    color: white;
+    padding: 5px;
+    text-align: center; 
+}
+
+/*  PROGRESS BAR PANEL */
+.progress-bar-panel {
+    margin: 10px 20px;
+}
+
+
+/* MAIN PANEL */
+.main-panel{
+    height: 750px; /*   Might want to take a closer look at this one later */
+    margin: 30px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.main-panel::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.material-switch {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.label-success {
+    margin-left: -50px;
+}
+
+.shiny-download-link {
+    color: white;
+}
+
+.shiny-download-link:hover {
+    color: white;
+}
+
+.radio-inline {
+    margin-right: 55px;
+}
+
+.choice-buttons{
+    margin-left: 100px;
+}
+
+
+.table td {
+    width: 50px;
+}
+
+td.highlight {
+  background-color: #F5F5F5 !important;
+}
+
+tr.highlight {
+  background-color: #F5F5F5 !important;
+}
+
+.char-tab {
+  /*display:inline-block;*/
+  margin: 0 auto;
+}
+
+.table-cell {
+    border: 1px solid #555;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.panel-next-page {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.default-sortable .rank-list-item:hover:not(.disabled) {
+  background-color: #85cc94;
+}
+
+/*  FUNDER PANEL */
+.funder-panel {
+    margin: 20px;
+    min-height: 50px;
+    /*border: 1px solid #000207;*/
+    background-color: #28a745;
+}
+
+.funder-panel p {
+    color: white;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.funder-panel img {
+    border: 1px solid white;
+}
+
+.funder-panel-image {
+    height: 60px;
+    margin: 10px;
+}
+
+/* TREATMENT PANEL */
+.treatment-panel {
+  margin: 20px;
+}
+
+.tabset-panel {
+  margin: 20px;  
+}
+
+/*  Mandatory star for use with the consent forms */
+.mandatory-star {color: red;}
+
+/* Set button colors */
+#next_page {
+  background-color: #28a745; 
+  float: right;
+}
+
+#next_alt {
+  background-color: #28a745; 
+}
