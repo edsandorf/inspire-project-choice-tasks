@@ -84,6 +84,10 @@ server <- function(input, output, session) {
   path <- file.path("www", "choice_tasks.csv")
   choice_tasks <- readr::read_csv(path)
   
+  names_attributes <- c("<b>Country of origin</b>", "<b>Colour</b>", "<b>Alcohol by volume</b>",
+    "<b>Grape variety</b>", "<b>Characteristic</b>", "<b>Organic</b>", "<b>Price</b>")
+  colnames(choice_tasks) <- names_attributes
+  
   # Define reactive values ----
   current <- reactiveValues(
     alt = 1,
@@ -201,7 +205,7 @@ server <- function(input, output, session) {
               
               # Subset the choice_tasks to only the current choice task
               task_matrix <- choice_tasks %>%
-                slice(the_rows)
+                dplyr::slice(the_rows)
               
               # Add checkboxes if the respondent is in the consideration-set or current best
               if (current$treatment %in% c(5, 6, 7)) {
